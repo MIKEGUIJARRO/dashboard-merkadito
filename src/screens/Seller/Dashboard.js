@@ -8,7 +8,7 @@ import { Body } from '../../components/Seller/Dashboard/Body';
 export const Dashboard = () => {
     return (
         <div className="flex flex-row">
-            <div className="color-light-bg p-6 max-w-max w-full flex flex-col space-y-5">
+            <div className="color-light-bg p-6 max-w-max flex flex-col space-y-5 h-screen sticky top-0 overflow-y-auto sticky max-h-screen min-w-min">
                 <Logo />
                 <Menu />
             </div>
@@ -16,7 +16,10 @@ export const Dashboard = () => {
                 <Header />
                 <Body />
             </div>
-            <div className="color-light-bg p-4 max-w-xs	w-full	">more content</div>
+            <div className="color-light-bg p-6 max-w-max flex flex-col space-y-5 h-screen sticky top-0 overflow-y-auto sticky max-h-screen">
+                <Logo />
+                <Menu />
+            </div>
         </div>
     )
 }

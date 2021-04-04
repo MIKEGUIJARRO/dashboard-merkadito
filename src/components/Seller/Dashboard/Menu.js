@@ -25,7 +25,7 @@ export const Menu = () => {
 
     return (
 
-        <ul className="flex flex-col space-y-2">
+        <ul className="flex flex-col space-y-2 items-stretch">
 
             {
                 options.map((option) => {

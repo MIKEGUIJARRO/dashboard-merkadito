@@ -43,7 +43,7 @@ export const Body = () => {
     return (
         <div>
             <h4 className="pb-6">Items</h4>
-            <table class="w-full table-auto">
+            <table class="w-full table-auto ">
                 <thead>
                     <tr className="bg-gray-200 text-gray-600 text-sm leading-normal">
                         <th className="py-3 px-6 text-left rounded-tl-lg">Name</th>
