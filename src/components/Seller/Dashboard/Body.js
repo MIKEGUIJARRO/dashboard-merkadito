@@ -47,11 +47,11 @@ export const Body = () => {
                 <thead>
                     <tr className="bg-gray-200 text-gray-600 text-sm leading-normal">
                         <th className="py-3 px-6 text-left rounded-tl-lg">Name</th>
-                        <th className="py-3 px-6 text-left">Image</th>
+                        <th className="py-3 px-6 text-center">Image</th>
                         <th className="py-3 px-6 text-left">Price</th>
                         <th className="py-3 px-6 text-left">Total Sales</th>
-                        <th className="py-3 px-6 text-left">Status</th>
-                        <th className="py-3 px-6 text-left rounded-tr-lg">Actions</th>
+                        <th className="py-3 px-6 text-center">Status</th>
+                        <th className="py-3 px-6 text-center rounded-tr-lg">Actions</th>
 
                     </tr>
                 </thead>
@@ -60,7 +60,7 @@ export const Body = () => {
                         items.map((item) => {
                             return <tr className="border-b border-gray-200 hover:bg-gray-100">
                                 <td className="py-3 px-6 text-left whitespace-nowrap font-semibold">{item.name}</td>
-                                <td className="py-3 px-6 text-left whitespace-nowrap">
+                                <td className="py-3 px-6 text-center whitespace-nowrap flex justify-center">
                                     <img className="rounded-full h-16 w-16" src={item.image} />
                                 </td>
                                 <td className="py-3 px-6 text-left whitespace-nowrap">${item.price}</td>
