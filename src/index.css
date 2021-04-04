@@ -68,6 +68,7 @@
     .color-off-white {
         @apply bg-white;
     }
+    
     /* Layout */
     .section-block-sm {
         @apply flex flex-col items-start space-y-8 max-w-xs	mx-auto;

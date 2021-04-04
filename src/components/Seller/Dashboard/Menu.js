@@ -29,7 +29,7 @@ export const Menu = () => {
 
             {
                 options.map((option) => {
-                    return <Primary logo={option.logo} title={option.name} />
+                    return <Primary key={option.name} logo={option.logo} title={option.name} />
                 })
             }
 
