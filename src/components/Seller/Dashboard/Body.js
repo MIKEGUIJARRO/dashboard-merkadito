@@ -8,7 +8,7 @@ export const Body = () => {
     const items = [
         {
             id: 1,
-            name: "Item 1",
+            name: "Item super cool para enseñar todo el conocimiento que me cargo papirrin",
             price: 12.25,
             image: "https://source.unsplash.com/random",
             totalSales: 12524,
@@ -43,7 +43,7 @@ export const Body = () => {
     return (
         <div>
             <h4 className="pb-6">Items</h4>
-            <table class="w-full table-auto ">
+            <table class="w-full table-auto">
                 <thead>
                     <tr className="bg-gray-200 text-gray-600 text-sm leading-normal">
                         <th className="py-3 px-6 text-left rounded-tl-lg">Name</th>
@@ -59,9 +59,9 @@ export const Body = () => {
                     {
                         items.map((item) => {
                             return <tr className="border-b border-gray-200 hover:bg-gray-100">
-                                <td className="py-3 px-6 text-left whitespace-nowrap font-semibold">{item.name}</td>
+                                <td className="py-3 px-6 text-left whitespace-nowrap font-semibold whitespace-pre-wrap">{item.name}</td>
                                 <td className="py-3 px-6 text-center whitespace-nowrap flex justify-center">
-                                    <img className="rounded-full h-16 w-16" src={item.image} />
+                                    <img className="rounded-full h-16 w-16 max-w-min" src={item.image} />
                                 </td>
                                 <td className="py-3 px-6 text-left whitespace-nowrap">${item.price}</td>
                                 <td className="py-3 px-6 text-left whitespace-nowrap">{item.totalSales}</td>

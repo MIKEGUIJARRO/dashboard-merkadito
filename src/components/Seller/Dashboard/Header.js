@@ -1,7 +1,5 @@
 import React from 'react'
 import { DollarSign, Percent, Truck, ShoppingBag, ArrowUp } from 'react-feather';
-import ScrollArea from 'react-scrollbar';
-
 
 export const Header = () => {
 

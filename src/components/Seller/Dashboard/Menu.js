@@ -1,6 +1,6 @@
 import React from 'react'
 import { ShoppingCart, MapPin, Package, Settings } from 'react-feather';
-import { Primary } from '../../UI/Button/Primary';
+import { Text } from '../../UI/Button/Text';
 
 
 export const Menu = () => {
@@ -29,7 +29,10 @@ export const Menu = () => {
 
             {
                 options.map((option) => {
-                    return <Primary key={option.name} logo={option.logo} title={option.name} />
+                    return <Text key={option.name}
+                        logo={option.logo}
+                        text={option.name}
+                        alignLeft={true} />
                 })
             }
 
