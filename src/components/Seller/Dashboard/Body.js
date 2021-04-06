@@ -58,10 +58,10 @@ export const Body = () => {
                 <tbody className="text-gray-600 text-sm font-light">
                     {
                         items.map((item) => {
-                            return <tr className="border-b border-gray-200 hover:bg-gray-100">
+                            return <tr key={item.id} className="border-b border-gray-200 hover:bg-gray-100">
                                 <td className="py-3 px-6 text-left whitespace-nowrap font-semibold whitespace-pre-wrap">{item.name}</td>
                                 <td className="py-3 px-6 text-center whitespace-nowrap flex justify-center">
-                                    <img className="rounded-full h-16 w-16 max-w-min" src={item.image} />
+                                    <img className="rounded-full h-16 w-16 max-w-min" src={item.image} alt={item.name} />
                                 </td>
                                 <td className="py-3 px-6 text-left whitespace-nowrap">${item.price}</td>
                                 <td className="py-3 px-6 text-left whitespace-nowrap">{item.totalSales}</td>

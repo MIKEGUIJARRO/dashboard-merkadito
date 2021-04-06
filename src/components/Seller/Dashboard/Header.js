@@ -39,8 +39,8 @@ export const Header = () => {
                 {
                     options.map((option) => {
                         return <li key={option.id} className="inline-block">
-                            <button className={`${option.bgColor} hover:${option.bgColorHover} p-4 rounded-lg transition duration-300 ease-in-out w-40 text-left 
-                            hover:shadow-sm  active:shadow-none`}>
+                            <button className={`${option.bgColor} p-4 rounded-lg w-40 text-left 
+                            transition duration-300 ease-in-out focus:ring focus:outline-none focus:ring-gray-400`}>
                                 <div className="w-full p-4 flex justify-between bg-white rounded-xl shadow-sm mb-6">
                                     {option.logo}
                                     <div className="flex justify-start items-center text-sm text-green-600 font-bold	">
