@@ -7,25 +7,29 @@ export const Header = () => {
         id: 1,
         name: "Revenue",
         logo: <DollarSign />,
-        bgColor: "bg-green-100"
+        bgColor: "bg-green-100",
+        bgColorHover: "bg-green-200",
     },
     {
         id: 2,
         name: "Percent",
         logo: <Percent />,
-        bgColor: "bg-blue-100"
+        bgColor: "bg-blue-100",
+        bgColorHover: "bg-blue-200",
     },
     {
         id: 3,
         name: "Truck",
         logo: <Truck />,
-        bgColor: "bg-indigo-100"
+        bgColor: "bg-indigo-100",
+        bgColorHover: "bg-indigo-200",
     },
     {
         id: 4,
         name: "ShoppingBag",
         logo: <ShoppingBag />,
-        bgColor: "bg-yellow-100	"
+        bgColor: "bg-yellow-100	",
+        bgColorHover: "bg-yellow-200",
     }];
 
     return (
@@ -35,7 +39,8 @@ export const Header = () => {
                 {
                     options.map((option) => {
                         return <li key={option.id} className="inline-block">
-                            <button className={`${option.bgColor} p-4 rounded-lg transition w-40 text-left hover:shadow-sm`}>
+                            <button className={`${option.bgColor} hover:${option.bgColorHover} p-4 rounded-lg transition duration-300 ease-in-out w-40 text-left 
+                            hover:shadow-sm  active:shadow-none`}>
                                 <div className="w-full p-4 flex justify-between bg-white rounded-xl shadow-sm mb-6">
                                     {option.logo}
                                     <div className="flex justify-start items-center text-sm text-green-600 font-bold	">

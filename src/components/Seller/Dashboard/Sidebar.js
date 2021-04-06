@@ -4,7 +4,7 @@ import Toggle from 'react-toggle';
 
 import { Save } from 'react-feather';
 
-import { Text } from '../../UI/Button/Text'
+import { Primary } from '../../UI/Button/Primary'
 
 export const Sidebar = () => {
     return (
@@ -24,7 +24,7 @@ export const Sidebar = () => {
 
 
                 <input className="max-w-min" type="file" accept="image/*" name="image" placeholder="image" className="px-2 py-1 rounded-lg" />
-                <Text logo={<Save />} text="texto" />
+                <Primary icon={<Save />} > Texto</Primary>
             </form>
         </div>
     )

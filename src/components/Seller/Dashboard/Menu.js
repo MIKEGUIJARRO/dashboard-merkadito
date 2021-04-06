@@ -1,25 +1,25 @@
 import React from 'react'
 import { ShoppingCart, MapPin, Package, Settings } from 'react-feather';
-import { Text } from '../../UI/Button/Text';
+import { Primary } from '../../UI/Button/Primary';
 
 
 export const Menu = () => {
 
     const options = [{
         name: "Orders",
-        logo: <ShoppingCart />
+        icon: <ShoppingCart />
     },
     {
         name: "Inventary",
-        logo: <Package />
+        icon: <Package />
     },
     {
         name: "Stores",
-        logo: <MapPin />
+        icon: <MapPin />
     },
     {
         name: "Settings",
-        logo: <Settings />
+        icon: <Settings />
     }];
 
 
@@ -29,12 +29,14 @@ export const Menu = () => {
 
             {
                 options.map((option) => {
-                    return <Text key={option.name}
-                        logo={option.logo}
-                        text={option.name}
-                        alignLeft={true} />
+                    return <Primary key={option.name}
+                        icon={option.icon}
+                        active={false}
+                        alignLeft={true} >{option.name} </Primary>
                 })
             }
+
+            <Primary active={true}>Contenido</Primary>
 
         </ul>
     )

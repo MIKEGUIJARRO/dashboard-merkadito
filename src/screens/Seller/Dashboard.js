@@ -4,8 +4,6 @@ import { Menu } from '../../components/Seller/Dashboard/Menu'
 import { Header } from '../../components/Seller/Dashboard/Header';
 import { Body } from '../../components/Seller/Dashboard/Body';
 import { Sidebar } from '../../components/Seller/Dashboard/Sidebar';
-import { Text } from '../../components/UI/Button/Text';
-
 
 export const Dashboard = () => {
     return (
