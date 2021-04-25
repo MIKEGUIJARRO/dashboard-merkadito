@@ -66,19 +66,19 @@ export const Body = () => {
                                 <td className="py-3 px-6 text-left whitespace-nowrap">${item.price}</td>
                                 <td className="py-3 px-6 text-left whitespace-nowrap">{item.totalSales}</td>
                                 <td className="py-3 px-6 text-center">
-                                    <span className={`rounded-full py-1 px-2 text-xs font-semibold ${item.status ? "bg-green-300 text-green-700" : "bg-red-300 text-red-700"}`}>
-                                        {item.status ? "Activo" : "Inactivo"}
+                                    <span className={`select-none rounded-full py-1 px-2 text-xs font-semibold ${item.status ? "bg-green-300 text-green-700" : "bg-red-300 text-red-700"}`}>
+                                        {item.status ? "Active" : "Inactive"}
                                     </span>
                                 </td>
                                 <td className="py-3 px-6 text-center">
                                     <div className="flex justify-between items-center space-x-1">
-                                        <button className="transition duration-100 ease-in-out transform hover:scale-125">
+                                        <button className="focus:outline-none transition duration-100 ease-in-out transform hover:scale-125">
                                             <Eye size={22} />
                                         </button>
-                                        <button className="transition duration-100 ease-in-out transform hover:scale-125">
+                                        <button className="focus:outline-none transition duration-100 ease-in-out transform hover:scale-125">
                                             <Edit2 size={22} />
                                         </button>
-                                        <button className="transition duration-100 ease-in-out transform hover:scale-125 hover:text-red-400">
+                                        <button className="focus:outline-none transition duration-100 ease-in-out transform hover:scale-125 hover:text-red-400">
                                             <Trash size={22} />
                                         </button>
                                     </div>
